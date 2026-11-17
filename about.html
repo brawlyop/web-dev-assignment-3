@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <style>
+
+        /* Basic styling */
+        body {
+            background-color: #eaf2f8;
+            color: #333333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #1a5276;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #2874a6;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f7dc6f;
+        }
+
+        /* About section */
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px;
+            padding: 30px;
+            background-color: white;
+            border: 2px solid #2874a6;
+            border-radius: 10px;
+            animation: fade 2s;
+        }
+
+        /* Profile placeholder */
+        .profile {
+            background-color: #2874a6;
+            color: white;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+
+        /* About text */
+        .about-text {
+            max-width: 500px;
+        }
+
+        h1 {
+            color: #1a5276;
+        }
+
+        /* Button */
+        .button {
+            display: inline-block;
+            background-color: #2874a6;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #1a5276;
+        }
+
+        /* Animation */
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Mobile screen */
+        @media screen and (max-width: 600px) {
+
+            .about {
+                flex-direction: column;
+                text-align: center;
+                margin: 15px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Tanishk Yadav</h2>
+        <p>My Personal Portfolio</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h1 style="text-align:center;">ABOUT ME</h1>
+
+    <section class="about">
+
+        <div class="profile">
+            TY
+        </div>
+
+        <div class="about-text">
+
+            <h2>Hello! I am Tanishk Yadav.</h2>
+
+            <p>
+                I am a student of B.Tech CSE Core 1st semester
+                studying at K.R. Mangalam University.
+            </p>
+
+            <p>
+                I am interested in web development and programming.
+                I am currently learning HTML, CSS, Python and C.
+            </p>
+
+            <p>
+                My goal is to improve my coding skills and create
+                useful websites and projects in the future.
+            </p>
+
+            <a href="contact.html" class="button">Contact Me</a>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

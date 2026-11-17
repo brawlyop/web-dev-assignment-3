@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Project</title>
+
+    <style>
+        body {
+            background-color: #eaf2f8;
+            color: #333333;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #1a5276;
+        }
+
+        h2 {
+            color: #2874a6;
+        }
+
+        nav {
+            background-color: #2874a6;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #f7dc6f;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #2874a6;
+            border-radius: 10px;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero-text h2 {
+            animation: fade 2s;
+        }
+
+        img {
+            width: 220px;
+            height: 220px;
+            border: 3px solid #2874a6;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Projects Section */
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .project {
+            background-color: #eaf2f8;
+            padding: 15px;
+            border: 1px solid #2874a6;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            background-color: #d6eaf8;
+        }
+
+        .project h3 {
+            color: #1a5276;
+        }
+
+        /* Skills Table */
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        th {
+            background-color: #2874a6;
+            color: white;
+        }
+
+        /* Contact Form */
+        input {
+            padding: 8px;
+            margin: 5px;
+            width: 200px;
+        }
+
+        button {
+            background-color: #2874a6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #1a5276;
+        }
+
+        footer {
+            background-color: #d6eaf8;
+            padding: 15px;
+        }
+
+        footer a {
+            color: #1a5276;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Mobile Responsive Design */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .hero {
+                flex-direction: column;
+            }
+
+            .project-container {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            section {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <!-- Header -->
+    <header>
+        <h1>Tanishk Yadav</h1>
+        <p>My Personal Portfolio</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <h2>Welcome to my Portfolio</h2>
+
+            <p>Hello! I am a web development student. This is my personal portfolio website.</p>
+
+            <h2>Web Development Student</h2>
+        </div>
+
+        <img src="images/profile.jpg" alt="My profile image">
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>Hello! I am Tanishk Yadav, a B.Tech CSE Core student at K.R. Mangalam University.</p>
+
+        <p>I am passionate about learning web development and building creative projects.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A personal website made using HTML and CSS to showcase my introduction, skills and projects.</p>
+                <p><strong>Technologies:</strong> HTML, CSS</p>
+            </div>
+
+            <div class="project">
+                <h3>Medium Clone</h3>
+                <p>A simple blog webpage designed to display articles and their content.</p>
+                <p><strong>Technologies:</strong> HTML, CSS</p>
+            </div>
+
+            <div class="project">
+                <h3>Birthday Card</h3>
+                <p>A creative digital birthday card with a colourful design and personal greeting.</p>
+                <p><strong>Technologies:</strong> HTML, CSS</p>
+            </div>
+
+            <div class="project">
+                <h3>User Form</h3>
+                <p>A simple form webpage where users can enter their name, email and message.</p>
+                <p><strong>Technologies:</strong> HTML, CSS</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+
+        <p>Here are some technologies I am learning as a CSE student.</p>
+
+        <table>
+            <tr>
+                <th>Skill</th>
+                <th>Level</th>
+                <th>Description</th>
+            </tr>
+
+            <tr>
+                <td>HTML</td>
+                <td>Beginner</td>
+                <td>Learning webpage structure</td>
+            </tr>
+
+            <tr>
+                <td>CSS</td>
+                <td>Beginner</td>
+                <td>Learning webpage styling</td>
+            </tr>
+
+            <tr>
+                <td>JavaScript</td>
+                <td>Learning</td>
+                <td>Learning basic programming</td>
+            </tr>
+
+            <tr>
+                <td>Python</td>
+                <td>Beginner</td>
+                <td>Learning basic programming</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <p>Email: tanishkydav8@gmail.com</p>
+
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/tanishk-yadav-aaa691431/" target="_blank">
+                Visit my Profile
+            </a>
+        </p>
+
+        <form action="mailto:tanishkydav8@gmail.com" method="post" enctype="text/plain">
+
+            <label>Name:</label><br>
+            <input type="text" name="Name" placeholder="Enter your name" required>
+            <br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="Email" placeholder="Enter your email" required>
+            <br><br>
+
+            <label>Message:</label><br>
+            <input type="text" name="Message" placeholder="Enter your message">
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>TANISHK's Project</h3>
+
+        <p><a href="#top">Back to top</a></p>
+        <p><a href="#contact">Contact</a></p>
+        <p><a href="https://github.com" target="_blank">GitHub</a></p>
+    </footer>
+
+</body>
+</html>

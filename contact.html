@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <style>
+        body {
+            background-color: #eaf2f8;
+            color: #333333;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #1a5276;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #2874a6;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        nav a:hover {
+            color: #f7dc6f;
+        }
+
+        h2 {
+            color: #1a5276;
+            animation: fade 2s;
+        }
+
+        .contact {
+            background-color: white;
+            width: 70%;
+            margin: 30px auto;
+            padding: 20px;
+            border: 2px solid #2874a6;
+            border-radius: 10px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact p {
+            padding: 10px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        a {
+            color: #2874a6;
+        }
+
+        .contact a:hover {
+            color: #1a5276;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #2874a6;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #1a5276;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* For mobile screens */
+        @media (max-width: 600px) {
+            .contact {
+                width: 85%;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Tanishk Yadav</h1>
+        <p>My Portfolio Website</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h2>CONTACT ME</h2>
+
+    <div class="contact">
+
+        <p>
+            <strong>Email:</strong><br>
+            tanishkydav8@gmail.com
+        </p>
+
+        <p>
+            <strong>LinkedIn:</strong><br>
+            <a href="https://www.linkedin.com/in/tanishk-yadav-aaa691431/" target="_blank">
+                Visit my LinkedIn Profile
+            </a>
+        </p>
+
+        <p>
+            <a class="button" href="mailto:tanishkydav8@gmail.com">
+                Send Me an Email
+            </a>
+        </p>
+
+    </div>
+
+    <p>
+        <a href="index.html">Back to Home</a>
+    </p>
+
+</body>
+</html>
